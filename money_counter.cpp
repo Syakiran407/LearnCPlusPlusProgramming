@@ -32,5 +32,21 @@ int main()
 
     cout << "You need " << oneDollar << " One Dollar Notes" << endl;
 
+    int tenCent = amount / 10;
+    amount %= 10;
+
+    cout << "You need " << tenCent << " Ten Cent Coins" << endl;
+
+    int fiveCent = amount / 5;
+    amount %= 5;
+
+    cout << "You need " << fiveCent << " Five Cent Coins" << endl;
+
+    int oneCent = amount / 1;
+    amount %= 1;
+
+    cout << "You need " << oneCent << " One Cent Coins" << endl; 
+
+
     return 0;
 }
